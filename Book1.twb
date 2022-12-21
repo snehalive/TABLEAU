@@ -1,0 +1,626 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='August++ (W5 OFFSET using Arrays)' inline='true' name='federated.0jozyg31n8buwm148jmyr04kkp2u' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='W5 OFFSET using Arrays' name='excel-direct.1rr21d41e6yf6n1h5qi9k1j9ktif'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/sneha/Documents/github/Excel/Excel/W5 OFFSET using Arrays.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1rr21d41e6yf6n1h5qi9k1j9ktif' name='AgentList' table='[AgentList]' type='table'>
+          <columns gridOrigin='F2:H14:no:B1:H18:0' header='yes' outcome='2'>
+            <column datatype='string' name='BEDFORD' ordinal='0' />
+            <column datatype='string' name='Taylor Charles' ordinal='1' />
+            <column datatype='string' name='04 7138 9308' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation all='true' name='August+' type='union'>
+            <columns header='yes'>
+              <column datatype='date' name='Property Sales August 2017' />
+              <column datatype='integer' name='F2' />
+              <column datatype='string' name='F3' />
+              <column datatype='string' name='F4' />
+              <column datatype='string' name='F5' />
+              <column datatype='string' name='F6' />
+              <column datatype='string' name='F7' />
+              <column datatype='string' name='F8' />
+              <column datatype='string' name='F9' />
+              <column datatype='string' name='F10' />
+              <column datatype='string' name='F11' />
+              <column datatype='string' name='Sheet' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='excel-direct.1rr21d41e6yf6n1h5qi9k1j9ktif' name='August' table='[August$]' type='table'>
+              <columns gridOrigin='A1:K750:no:A1:K750:0' header='yes' outcome='2'>
+                <column datatype='date' name='Property Sales August 2017' ordinal='0' />
+                <column datatype='integer' name='F2' ordinal='1' />
+                <column datatype='string' name='F3' ordinal='2' />
+                <column datatype='string' name='F4' ordinal='3' />
+                <column datatype='string' name='F5' ordinal='4' />
+                <column datatype='string' name='F6' ordinal='5' />
+                <column datatype='string' name='F7' ordinal='6' />
+                <column datatype='string' name='F8' ordinal='7' />
+                <column datatype='string' name='F9' ordinal='8' />
+                <column datatype='string' name='F10' ordinal='9' />
+                <column datatype='string' name='F11' ordinal='10' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.1rr21d41e6yf6n1h5qi9k1j9ktif' name='AgentList' table='[AgentList]' type='table'>
+            <columns gridOrigin='F2:H14:no:B1:H18:0' header='yes' outcome='2'>
+              <column datatype='string' name='BEDFORD' ordinal='0' />
+              <column datatype='string' name='Taylor Charles' ordinal='1' />
+              <column datatype='string' name='04 7138 9308' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[August+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K750:no:A1:K750:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AgentList]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;F2:H14:no:B1:H18:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property Sales August 2017</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Property Sales August 2017]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>Property Sales August 2017</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F11</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F11]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>F11</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[August+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[August_48E83718F97F43EEBC3B27A631D3284D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BEDFORD</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BEDFORD]</local-name>
+            <parent-name>[AgentList]</parent-name>
+            <remote-alias>BEDFORD</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AgentList_879B5E0329494F5791408C5AA03AD020]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Taylor Charles</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Taylor Charles]</local-name>
+            <parent-name>[AgentList]</parent-name>
+            <remote-alias>Taylor Charles</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AgentList_879B5E0329494F5791408C5AA03AD020]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>04 7138 9308</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[04 7138 9308]</local-name>
+            <parent-name>[AgentList]</parent-name>
+            <remote-alias>04 7138 9308</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AgentList_879B5E0329494F5791408C5AA03AD020]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bedford' datatype='string' name='[BEDFORD]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='AgentList' datatype='table' name='[__tableau_internal_object_id__].[AgentList_879B5E0329494F5791408C5AA03AD020]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='August' datatype='table' name='[__tableau_internal_object_id__].[August_48E83718F97F43EEBC3B27A631D3284D]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='AgentList' id='AgentList_879B5E0329494F5791408C5AA03AD020'>
+            <properties context=''>
+              <relation connection='excel-direct.1rr21d41e6yf6n1h5qi9k1j9ktif' name='AgentList' table='[AgentList]' type='table'>
+                <columns gridOrigin='F2:H14:no:B1:H18:0' header='yes' outcome='2'>
+                  <column datatype='string' name='BEDFORD' ordinal='0' />
+                  <column datatype='string' name='Taylor Charles' ordinal='1' />
+                  <column datatype='string' name='04 7138 9308' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='August' id='August_48E83718F97F43EEBC3B27A631D3284D'>
+            <properties context=''>
+              <relation all='true' name='August+' type='union'>
+                <columns header='yes'>
+                  <column datatype='date' name='Property Sales August 2017' />
+                  <column datatype='integer' name='F2' />
+                  <column datatype='string' name='F3' />
+                  <column datatype='string' name='F4' />
+                  <column datatype='string' name='F5' />
+                  <column datatype='string' name='F6' />
+                  <column datatype='string' name='F7' />
+                  <column datatype='string' name='F8' />
+                  <column datatype='string' name='F9' />
+                  <column datatype='string' name='F10' />
+                  <column datatype='string' name='F11' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.1rr21d41e6yf6n1h5qi9k1j9ktif' name='August' table='[August$]' type='table'>
+                  <columns gridOrigin='A1:K750:no:A1:K750:0' header='yes' outcome='2'>
+                    <column datatype='date' name='Property Sales August 2017' ordinal='0' />
+                    <column datatype='integer' name='F2' ordinal='1' />
+                    <column datatype='string' name='F3' ordinal='2' />
+                    <column datatype='string' name='F4' ordinal='3' />
+                    <column datatype='string' name='F5' ordinal='4' />
+                    <column datatype='string' name='F6' ordinal='5' />
+                    <column datatype='string' name='F7' ordinal='6' />
+                    <column datatype='string' name='F8' ordinal='7' />
+                    <column datatype='string' name='F9' ordinal='8' />
+                    <column datatype='string' name='F10' ordinal='9' />
+                    <column datatype='string' name='F11' ordinal='10' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[F11]' />
+              <expression op='[BEDFORD]' />
+            </expression>
+            <first-end-point object-id='August_48E83718F97F43EEBC3B27A631D3284D' />
+            <second-end-point object-id='AgentList_879B5E0329494F5791408C5AA03AD020' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (Book2)' inline='true' name='federated.1oh80kg147r1b81063qd21jxtmty' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Book2' name='excel-direct.0j1xbqs050nzeg16l396b1coasqc'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/sneha/Documents/github/Excel/Excel/Book2.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0j1xbqs050nzeg16l396b1coasqc' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C10:no:A1:C10:0' header='yes' outcome='6'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='Products' ordinal='1' />
+            <column datatype='integer' name='Number of sales' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0j1xbqs050nzeg16l396b1coasqc' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C10:no:A1:C10:0' header='yes' outcome='6'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='Products' ordinal='1' />
+            <column datatype='integer' name='Number of sales' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C10:no:A1:C10:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_ABF2BB0D404E4D438DADCC6964C1B6CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Products</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Products]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Products</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_ABF2BB0D404E4D438DADCC6964C1B6CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of sales]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Number of sales</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_ABF2BB0D404E4D438DADCC6964C1B6CA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_ABF2BB0D404E4D438DADCC6964C1B6CA]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_ABF2BB0D404E4D438DADCC6964C1B6CA'>
+            <properties context=''>
+              <relation connection='excel-direct.0j1xbqs050nzeg16l396b1coasqc' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C10:no:A1:C10:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='Products' ordinal='1' />
+                  <column datatype='integer' name='Number of sales' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='August++ (W5 OFFSET using Arrays)' name='federated.0jozyg31n8buwm148jmyr04kkp2u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jozyg31n8buwm148jmyr04kkp2u'>
+            <column datatype='integer' name='[F2]' role='measure' type='quantitative' />
+            <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#e15759' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0jozyg31n8buwm148jmyr04kkp2u].[sum:F2:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{75D67AD6-8F66-415C-8857-DFAB5E2DB3FC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jozyg31n8buwm148jmyr04kkp2u].[__tableau_internal_object_id__].[cnt:August_48E83718F97F43EEBC3B27A631D3284D:qk]</field>
+            <field>[federated.0jozyg31n8buwm148jmyr04kkp2u].[sum:F2:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CBED146C-5DA0-4627-8236-32541C856F7D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='Sheet 1' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACxElEQVRYhe2WS0wTURSGv5m20xYKLVQi6KI0JBAEg4qAMbrRhUYXPpZo3BndGYwaE+PG
+      uNP4WBh1J5IQRSO6YanBaKKYtJuqiSh2CEESldIXbad2rotqRQFfsZlJ7L+buefM+e83995z
+      JSGE4D+WbLQBo1UCYLQBo1UCYLQBo1UCYLQBo1UCYLQBo1UCYLSBv9GHCxeZffL0n3zLlADS
+      oRDvjh1HjyeKXsuUAFKBILLTgaaGi17LdAD0eIJsWMXe2EgqECx6PWvRK/yhNDWMpCg4Vq8i
+      euMmejyBXOGaF6cnk0Su9ZIcHkZPZ7DV1eHZtxdnWxtI0pxAncTwQ6IDt8hFIkiKQllXJ549
+      3Vg8HvMBSAWC2FtWoPj9SDYbmhrG0do6L26mvx9PdzfLr14BWSY5/JCPly7jPXgAZ/uafJAQ
+      RO8MMjsyQs3RIyj+evR4nMT9B+SiUfMB+Lr8yzduQHY6sTc3kwoEFwRQvX8/Zeu6Cs+uzZsA
+      iA8N4WhtQbLbyYy+ZnbkGTWHe7DW1gIgV1ZSuXNHIc9UZ0B0cBDn2nYUvx+Aiu3byKoq6VDo
+      t/LLOjsRuRyaOg7kYVRs3VKY/EIyzQrQ4wnSoedkx8eJXO/7bszm8y24Cn6U0HMILftHdU0D
+      QFPDWJd4qT19CklRCu8zr0aZ6e9f9DCcq9z0NOg61iVeABSfj+zExE9zTLMFUoEg9ubm7yYP
+      YFtWB0L8+k4gBMlHj7HV+7BUVQHgWNVG5sVLPk1NLZpmCgB6PIE2Noa9qWnemOxyoTQ0zLsT
+      ZCcn0VOpfH4sRqS3j1QgiHvXzkIbVOrrca5t5/2582hjb0EI9FiM2N17aKoKmGQLaGNvQIj8
+      315AjpWtRAdu51uX242l2ks2HObdoR5ysVi+t3d0sPTkCSzV1d8SJQn37l1YvF7enzlLLhJB
+      drkoX78e65e4zyaD/pm4IJPoAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
